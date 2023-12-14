@@ -1,0 +1,54 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="DigitalHomeCinemaManager.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SerialDevice" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Generic</Value>
+    </Setting>
+    <Setting Name="DisplayDevice" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sony Projector</Value>
+    </Setting>
+    <Setting Name="MediaInfoDevice" Type="System.String" Scope="User">
+      <Value Profile="(Default)">TMDB</Value>
+    </Setting>
+    <Setting Name="PrerollPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\Theater\Videos\Preroll</Value>
+    </Setting>
+    <Setting Name="MediaPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\Theater\Videos\Movies</Value>
+    </Setting>
+    <Setting Name="TrailerPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\Theater\Videos\Trailers</Value>
+    </Setting>
+    <Setting Name="ProcessorDevice" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Denon AVR</Value>
+    </Setting>
+    <Setting Name="InputSwitchDevice" Type="System.String" Scope="User">
+      <Value Profile="(Default)">HDFury Diva</Value>
+    </Setting>
+    <Setting Name="VUDevice" Type="NAudio.CoreAudioApi.MMDeviceEnumerator" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="VUDeviceEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="RandTrailers" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="TrailerLimitEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="EnableLogs" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SourceDevice" Type="System.String" Scope="User">
+      <Value Profile="(Default)">MPC Home Cinema</Value>
+    </Setting>
+    <Setting Name="SourceDeviceEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="TrailerLimitSelectionIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

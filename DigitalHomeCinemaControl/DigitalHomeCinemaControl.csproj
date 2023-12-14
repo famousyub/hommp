@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <SkipValidatePackageReferences>true</SkipValidatePackageReferences>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FE75C5F3-1416-439E-BFDC-0CC8D07A7260}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DigitalHomeCinemaControl</RootNamespace>
+    <AssemblyName>DigitalHomeCinemaControl</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\x64\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\Release\x64\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\x86\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\Release\x86\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\BindingItem.cs" />
+    <Compile Include="Components\Audio\ChannelBinding.cs" />
+    <Compile Include="Components\Audio\ChannelStatus.cs" />
+    <Compile Include="Collections\DispatchedBindingList.cs" />
+    <Compile Include="Collections\IDispatchedBindingList.cs" />
+    <Compile Include="Components\IDispatchEvents.cs" />
+    <Compile Include="Collections\Specialized\MultiplexedBindingList.cs" />
+    <Compile Include="Components\Lighting\Enums.cs" />
+    <Compile Include="Components\Lighting\Light.cs" />
+    <Compile Include="Components\SettingItem.cs" />
+    <Compile Include="Components\Lighting\LightingScene.cs" />
+    <Compile Include="Components\Timers\WaitTimer.cs" />
+    <Compile Include="Components\Timers\Enums.cs" />
+    <Compile Include="Components\Timers\HighAccuracyTimer.cs" />
+    <Compile Include="Components\Timers\NativeMethods.cs" />
+    <Compile Include="Components\Timers\TimerCapabilities.cs" />
+    <Compile Include="Controllers\Base\DeviceController.cs" />
+    <Compile Include="Controllers\Base\DisplayController.cs" />
+    <Compile Include="Controllers\Base\LightingController.cs" />
+    <Compile Include="Controllers\Base\ProcessorController.cs" />
+    <Compile Include="Controllers\Base\SourceController.cs" />
+    <Compile Include="Components\IBindingItem.cs" />
+    <Compile Include="Controllers\ControllerErrorEventArgs.cs" />
+    <Compile Include="Controllers\IController.cs" />
+    <Compile Include="Controllers\IDisplayController.cs" />
+    <Compile Include="Controllers\ILightingController.cs" />
+    <Compile Include="Controllers\IMediaInfoController.cs" />
+    <Compile Include="Controllers\IProcessorController.cs" />
+    <Compile Include="Controllers\IRequirePairing.cs" />
+    <Compile Include="Controllers\IScheduleController.cs" />
+    <Compile Include="Controllers\ISerialController.cs" />
+    <Compile Include="Controllers\ISourceController.cs" />
+    <Compile Include="Controllers\ISupportCustomNames.cs" />
+    <Compile Include="Controllers\ISwitchController.cs" />
+    <Compile Include="Controllers\Providers\Denon\Avr\AvrClient.cs" />
+    <Compile Include="Controllers\Providers\Denon\AvrController.cs" />
+    <Compile Include="Controllers\Providers\Denon\Avr\Enums.cs" />
+    <Compile Include="Controllers\Providers\Denon\Extensions.cs" />
+    <Compile Include="Controllers\Providers\HDFury\DivaController.cs" />
+    <Compile Include="Controllers\Providers\HDFury\Enums.cs" />
+    <Compile Include="Controllers\Providers\MediaPlayerClassic\MpcController.cs" />
+    <Compile Include="Controllers\Providers\MovieDb\MovieDbController.cs" />
+    <Compile Include="Controllers\Providers\Scheduler\Enums.cs" />
+    <Compile Include="Controllers\Providers\Scheduler\Extensions.cs" />
+    <Compile Include="Controllers\Providers\Scheduler\ScheduleController.cs" />
+    <Compile Include="Controllers\Providers\Scheduler\ScheduleItem.cs" />
+    <Compile Include="Controllers\Providers\Serial\SerialController.cs" />
+    <Compile Include="Controllers\Providers\Sony\Extensions.cs" />
+    <Compile Include="Controllers\Providers\Sony\ProjectorController.cs" />
+    <Compile Include="Controllers\Providers\Sony\Sdcp\Enums.cs" />
+    <Compile Include="Controllers\Providers\Sony\Sdcp\SdcpClient.cs" />
+    <Compile Include="Controllers\Providers\Sony\Sdcp\SdcpRequest.cs" />
+    <Compile Include="Controllers\Providers\Sony\Sdcp\SdcpResponse.cs" />
+    <Compile Include="Controllers\Providers\VLC\VLCController.cs" />
+    <Compile Include="Controllers\Routing\IRoutingDestination.cs" />
+    <Compile Include="Controllers\Routing\IRoutingSource.cs" />
+    <Compile Include="Controllers\Routing\MatchAction.cs" />
+    <Compile Include="Controllers\Routing\RoutingDataEventArgs.cs" />
+    <Compile Include="Controllers\Routing\RoutingItem.cs" />
+    <Compile Include="Controls\Common\MediaInfoControl.xaml.cs">
+      <DependentUpon>MediaInfoControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\SmallListControl.xaml.cs">
+      <DependentUpon>SmallListControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\SpeakerOutputControl.xaml.cs">
+      <DependentUpon>SpeakerOutputControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Denon\AudysseyControl.xaml.cs">
+      <DependentUpon>AudysseyControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Denon\AvrInfoControl.xaml.cs">
+      <DependentUpon>AvrInfoControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DeviceControl.cs" />
+    <Compile Include="Controls\Common\SourceInfoControl.xaml.cs">
+      <DependentUpon>SourceInfoControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\HDFury\InputControl.xaml.cs">
+      <DependentUpon>InputControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\IDeviceControl.cs" />
+    <Compile Include="Controls\Common\ProjectorInfoPanelControl.xaml.cs">
+      <DependentUpon>ProjectorInfoPanelControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\IRequireController.cs" />
+    <Compile Include="Devices\Device.cs" />
+    <Compile Include="Devices\DisplayDevice.cs" />
+    <Compile Include="Devices\IDevice.cs" />
+    <Compile Include="Devices\MediaInfoDevice.cs" />
+    <Compile Include="Devices\ProcessorDevice.cs" />
+    <Compile Include="Devices\SerialDevice.cs" />
+    <Compile Include="Devices\SourceDevice.cs" />
+    <Compile Include="Devices\SwitchDevice.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreensInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
+    <None Include="app.config" />
+    <None Include="DigitalHomeCinemaControl.licenseheader" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\outline_filter_1_black_24dp.png" />
+    <Resource Include="Resources\Icons\outline_filter_1_white_24dp.png" />
+    <Resource Include="Resources\Icons\outline_filter_2_black_24dp.png" />
+    <Resource Include="Resources\Icons\outline_filter_2_white_24dp.png" />
+    <Resource Include="Resources\Icons\outline_filter_3_black_24dp.png" />
+    <Resource Include="Resources\Icons\outline_filter_3_white_24dp.png" />
+    <Resource Include="Resources\Icons\outline_filter_4_black_24dp.png" />
+    <Resource Include="Resources\Icons\outline_filter_4_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Controls\Common\MediaInfoControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Common\SmallListControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Common\SourceInfoControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Common\ProjectorInfoPanelControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Common\SpeakerOutputControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Denon\AudysseyControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Denon\AvrInfoControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\HDFury\InputControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\tmdb-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack">
+      <Version>1.11.54</Version>
+    </PackageReference>
+    <PackageReference Include="System.Net.Http">
+      <Version>4.3.4</Version>
+    </PackageReference>
+    <PackageReference Include="TMDbLib">
+      <Version>2.0.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

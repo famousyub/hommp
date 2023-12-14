@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalHomeCinemaManager", "DigitalHomeCinemaManager\DigitalHomeCinemaManager.csproj", "{4F70B306-CF18-4FB5-8F96-A52DECFBD0B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalHomeCinemaControl", "DigitalHomeCinemaControl\DigitalHomeCinemaControl.csproj", "{FE75C5F3-1416-439E-BFDC-0CC8D07A7260}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5F1A7B39-9616-4EC9-AF6E-9AB781FAD1B6}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Installer", "Installer\Installer.csproj", "{F3F12B98-3F1B-4A2C-BFE4-927089A85FFB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4F70B306-CF18-4FB5-8F96-A52DECFBD0B5} = {4F70B306-CF18-4FB5-8F96-A52DECFBD0B5}
+		{FE75C5F3-1416-439E-BFDC-0CC8D07A7260} = {FE75C5F3-1416-439E-BFDC-0CC8D07A7260}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F70B306-CF18-4FB5-8F96-A52DECFBD0B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F70B306-CF18-4FB5-8F96-A52DECFBD0B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F70B306-CF18-4FB5-8F96-A52DECFBD0B5}.Debug|x64.ActiveCfg = Debug|x64
+		{4F70B306-CF18-4FB5-8F96-A52DECFBD0B5}.Debug|x64.Build.0 = Debug|x64
+		{4F70B306-CF18-4FB5-8F96-A52DECFBD0B5}.Debug|x86.ActiveCfg = Debug|x86
+		{4F70B306-CF18-4FB5-8F96-A52DECFBD0B5}.Debug|x86.Build.0 = Debug|x86
+		{4F70B306-CF18-4FB5-8F96-A52DECFBD0B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F70B306-CF18-4FB5-8F96-A52DECFBD0B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F70B306-CF18-4FB5-8F96-A52DECFBD0B5}.Release|x64.ActiveCfg = Release|x64
+		{4F70B306-CF18-4FB5-8F96-A52DECFBD0B5}.Release|x64.Build.0 = Release|x64
+		{4F70B306-CF18-4FB5-8F96-A52DECFBD0B5}.Release|x86.ActiveCfg = Release|x86
+		{4F70B306-CF18-4FB5-8F96-A52DECFBD0B5}.Release|x86.Build.0 = Release|x86
+		{FE75C5F3-1416-439E-BFDC-0CC8D07A7260}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE75C5F3-1416-439E-BFDC-0CC8D07A7260}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE75C5F3-1416-439E-BFDC-0CC8D07A7260}.Debug|x64.ActiveCfg = Debug|x64
+		{FE75C5F3-1416-439E-BFDC-0CC8D07A7260}.Debug|x64.Build.0 = Debug|x64
+		{FE75C5F3-1416-439E-BFDC-0CC8D07A7260}.Debug|x86.ActiveCfg = Debug|x86
+		{FE75C5F3-1416-439E-BFDC-0CC8D07A7260}.Debug|x86.Build.0 = Debug|x86
+		{FE75C5F3-1416-439E-BFDC-0CC8D07A7260}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE75C5F3-1416-439E-BFDC-0CC8D07A7260}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE75C5F3-1416-439E-BFDC-0CC8D07A7260}.Release|x64.ActiveCfg = Release|x64
+		{FE75C5F3-1416-439E-BFDC-0CC8D07A7260}.Release|x64.Build.0 = Release|x64
+		{FE75C5F3-1416-439E-BFDC-0CC8D07A7260}.Release|x86.ActiveCfg = Release|x86
+		{FE75C5F3-1416-439E-BFDC-0CC8D07A7260}.Release|x86.Build.0 = Release|x86
+		{F3F12B98-3F1B-4A2C-BFE4-927089A85FFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3F12B98-3F1B-4A2C-BFE4-927089A85FFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3F12B98-3F1B-4A2C-BFE4-927089A85FFB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F3F12B98-3F1B-4A2C-BFE4-927089A85FFB}.Debug|x64.Build.0 = Debug|Any CPU
+		{F3F12B98-3F1B-4A2C-BFE4-927089A85FFB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F3F12B98-3F1B-4A2C-BFE4-927089A85FFB}.Debug|x86.Build.0 = Debug|Any CPU
+		{F3F12B98-3F1B-4A2C-BFE4-927089A85FFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3F12B98-3F1B-4A2C-BFE4-927089A85FFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3F12B98-3F1B-4A2C-BFE4-927089A85FFB}.Release|x64.ActiveCfg = Release|Any CPU
+		{F3F12B98-3F1B-4A2C-BFE4-927089A85FFB}.Release|x64.Build.0 = Release|Any CPU
+		{F3F12B98-3F1B-4A2C-BFE4-927089A85FFB}.Release|x86.ActiveCfg = Release|Any CPU
+		{F3F12B98-3F1B-4A2C-BFE4-927089A85FFB}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {26CDDB1C-55C7-46C2-8791-A9D90D678A3C}
+	EndGlobalSection
+EndGlobal
